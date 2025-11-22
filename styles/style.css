@@ -1,106 +1,187 @@
-a, p{
-    font-size: 16pt;
-    color: white;
+:root{
+    --clr-primary: #84B7C9;
+    --clr-secondary: #47697A;
+    --clr-bg: #231F1E;
+    --clr-text: #E4ECE7;
+    --clr-accent: #EBEEBF;
 }
 
-a{
-    text-decoration: underline 1px;
-    font-family: 'Rubik-Italic';
-    font-weight: 300;
-
+html{
+    font-size: 16px;
+    background-color: var(--clr-bg);
+    color: var(--clr-text);    
 }
 
-body{
-    background-color: #231F1E;
+h1{
+    font-size: 2.9rem;
+
+}
+h2{
+    font-size: 2.6rem;
+    margin: 0px
+}
+h3{
+    font-size: 1.6rem;
 }
 
 
-.body_container{
-    max-width: 1440px;
+.container{
+    max-width: 1200px;
+    padding: 0 30px 0 30px;
     margin:auto;
 }
 
-header{
-    padding: 0px, 183px;
+.header_cont, .footer_cont{
     height: 90px;
 }
 
-.header_container{
-    display: flex;
-    height: 100%;
-
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0px 183px;
+header, footer{
+    background-color: #252322;
 }
 
-.etc_links{
-    display: flex;
-    gap:20px;
+.logo{
+    width: 90px;
 }
 
-.main_link{
-    padding: 0px 38px;
+.header__link{
+    padding: 1rem 2rem;
+
+    color: var(--clr-accent);
+    font-family: 'Rubik-Italic';
+    font-weight: 300;
+    text-decoration: solid underline 1px;
 }
-
-.articles_link{
-    padding: 0px 45px;
-}
-
-.about_link{
-    padding: 0px 51px;
-}
-
-
-
 
 .hero_section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 1080px;
 
-    background-image: url("/static/fire.png");
-    height: 810px;
+    background-image: url('/public/images/hero.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
 }
 
-.hero_header{
-    font-size:60px;
+.hero_h{
     font-family: 'Belarus';
-    letter-spacing: 9px;
-    color: #E4ECE7;
+    letter-spacing: 0.5rem;
+    text-align: center;
+
+    position: absolute;
+
+    transform: translateY(-60px)
 }
+
 
 .info_label{
-    background-color: #EBEEBF;
+    display: inline-block;
+    background-color: var(--clr-accent);
+    color: var(--clr-bg);
     border-radius: 25px;
-    font-size: 16px;
-    padding: 5px 15px;
+
+    font-family: 'SC-Portugal';
+    letter-spacing: -2px;
+    padding:2px 7px;
 }
 
-.block_h2{
-    font-size: 52px;
+.info_label_rt{
+    margin-left: auto;
+}
+
+.info_block{
+    width:50%;
+}
+
+.info__img{
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+
+
+/* УТИЛИТАРНЫЕ КЛАССЫ */
+.flex {display: flex}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.f-col{flex-direction: column;}
+.f-row{flex-direction: row;}
+.f-rowr{flex-direction: row-reverse;}
+.f-colr{flex-direction: column-reverse;}
+
+.ai-center{align-items: center;}
+
+.jc-center {justify-content: center;}
+.jc-between{justify-content: space-between;}
+
+.ta-right{text-align:right;}
+.ta-center{text-align: center;}
+
+.g1 {gap:1rem}
+.g2 {gap: 2rem}
+.g4 {gap: 4rem}
+.g05{gap: 0.5rem}
+
+.p1{padding:1rem}
+.p2{padding:2rem}
+.p05{padding:0.5rem}
+
+.f-bel{
     font-family: 'Belarus';
-    letter-spacing: 15px;
-    color: white;
 }
 
-.fire_steel{
-    width: 50%;
+.f-rub{
+    font-family: 'Rubik';
+    font-weight: 100;
+}
+.f-por{
+    font-family: 'SC-Portugal';
+}
+
+
+.l-sp01{
+    letter-spacing: 0.1rem;
+}
+.l-sp05{
+    letter-spacing: 0.5rem;
+}
+
+.l-sp1{
+    letter-spacing: 1rem;
 }
 
 
 @font-face {
-    font-family: Rubik-Italic;
-    src: url("/static/fonts/Rubik-Italic-VariableFont_wght.ttf");
+    font-family: 'Belarus';
+    src: url('/public/fonts/Belarus.otf');
 }
 
 @font-face {
-    font-family: Rubik;
-    src: url("/static/fonts/Rubik.ttf");
+    font-family: 'Rubik-Italic';
+    src: url('/public/fonts/Rubik-Italic-VariableFont_wght.ttf');
 }
 
-@font-face {
-    font-family: Belarus;
-    src: url("/static/fonts/Belarus.otf");
+@font-face{
+    font-family: 'Rubik';
+    src: url('/public/fonts/Rubik-VariableFont_wght.ttf')
+}
+
+@font-face{
+    font-family: 'SC-Portugal';
+    src: url('/public/fonts/SC-Portugal.ttf')
+}
+
+
+@media (max-width: 750px) {
+    .info_block{
+        width: 100%;
+    }
+    .info{
+        justify-content: center;
+    }
+    .info__img{
+        width:100%;
+        flex: 0 1 350px;
+    }
 }
