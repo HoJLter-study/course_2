@@ -39,6 +39,14 @@ header, footer{
     background-color: #252322;
 }
 
+footer{
+    margin-top: 50px;
+}
+
+header{
+    margin-bottom: 50px;
+}
+
 .logo{
     width: 90px;
 }
@@ -91,12 +99,32 @@ header, footer{
     width:50%;
 }
 
+.about_block{
+    width: 70%;
+}
+
 .info__img{
     border-radius: 25px;
     object-fit: contain;
 }
 
+.autors_link{
+    background-color: var(--clr-accent);
+    color: var(--clr-bg);
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+}
 
+.contact__input, .contact__submit{
+    background-color: var(--clr-accent);
+    border-radius: 25px;
+    border-width: 0px;
+}
+
+.contact__submit{
+    margin-top: 15px;
+    height: 2rem;
+}
 
 /* УТИЛИТАРНЫЕ КЛАССЫ */
 .flex {display: flex}
@@ -120,7 +148,7 @@ header, footer{
 
 .g1 {gap:1rem}
 .g2 {gap: 2rem}
-.g4 {gap: 4rem}
+.g4 {gap: 1rem}
 .g05{gap: 0.5rem}
 
 .p1{padding:1rem}

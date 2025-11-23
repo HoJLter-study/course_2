@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Царская ковка</title>
+</head>
+<body>
+    <header>
+        <div class="header_cont container flex ai-center jc-between">
+            <a href="index.html" class="header__link">
+                <img class="logo" src="public/images/logo.png" alt="ГЛАВНАЯ">
+            </a>
+            <nav class="flex g2">
+                <a href="/about.html" class="header__link">О НАС</a>
+                <a href="/articles.html" class="header__link">СТАТЬИ</a>
+                <a href="/for-autors.html" class="header__link">АВТОРАМ</a>                
+            </nav>
+        </div>
+    </header>
+
+    <main class="container flex f-col g4">
+
+        <section class="info flex">
+            <div class="flex f-col jc-center ai-center">
+                <div class="info_label">AUTORS</div>
+                <h2 class="ta-center">
+                    <span class="f-bel l-sp05">УКАЖИТЕ КОНТАКТНУЮ ИНФОРМАЦИЮ</span>
+                </h2>
+                <p class="f-rub info__text ta-center">
+                    Оставьте ваши контактные данные, и мы свяжемся с вами для уточнения темы, формата материала и деталей публикации. Мы поддержим вас на всех этапах: от идеи до готовой статьи или проекта.
+                </p>
+                <form class="flex f-col g05">
+                    <label class="f-rub" for="name">Введите ФИО</label>
+                    <input class="contact__input" type="text" id="name" name="name" placeholder="ФИО">
+                    <label class="f-rub" for="email">Введите электронную почту</label>
+                    <input class="contact__input" type="email" id="email" name="email" placeholder="Почта">
+                    <label class="f-rub" for="phone">Введите номер телефона</label>
+                    <input class="contact__input" type="text" id="phone" name="phone" placeholder="+7 (___) ___ __ - __">
+
+                    <input class="contact__submit" type="submit" name="submit" id="submit">
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container footer_cont flex jc-between ai-center">
+            <div>
+                ИВАН СУВОРОВ
+            </div>
+            <div>
+                25-ИСТ-1-2
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
