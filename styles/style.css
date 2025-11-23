@@ -9,12 +9,11 @@
 html{
     font-size: 16px;
     background-color: var(--clr-bg);
-    color: var(--clr-text);    
+    color: var(--clr-text);
 }
 
 h1{
     font-size: 2.9rem;
-
 }
 h2{
     font-size: 2.6rem;
@@ -91,6 +90,7 @@ header{
     padding:2px 7px;
 }
 
+
 .info_label_rt{
     margin-left: auto;
 }
@@ -126,6 +126,38 @@ header{
     height: 2rem;
 }
 
+
+.article__search{
+    width: 30rem;
+    background-color: var(--clr-accent);
+    border-width: 0px;
+
+    border-radius: 25px;
+    height:2rem;
+    padding: 0rem 2rem
+}
+
+.article__submit{
+    background-color: var(--clr-accent);
+    
+    border-radius: 25px;
+    height: 2rem;
+    width: 2rem;
+    border-width: 0px;
+}
+
+.article__submit:active{
+    transition: translate 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
+.article__container{
+    max-width: 900px;
+}
+
+
+
 /* УТИЛИТАРНЫЕ КЛАССЫ */
 .flex {display: flex}
 
@@ -148,7 +180,6 @@ header{
 
 .g1 {gap:1rem}
 .g2 {gap: 2rem}
-.g4 {gap: 1rem}
 .g05{gap: 0.5rem}
 
 .p1{padding:1rem}
@@ -178,6 +209,22 @@ header{
 .l-sp1{
     letter-spacing: 1rem;
 }
+
+/* УТИЛИТАРНЫЕ-АНИМАЦИЯ */
+
+.a-left-w{
+    animation: left-whoosh 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.a-right-w{
+    animation: right-whoosh 2s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+.a-appear{
+    animation: appear 5s cubic-bezier(0.23, 1, 0.320, 1) ;
+}
+
+
 
 
 @font-face {
@@ -212,4 +259,21 @@ header{
         width:100%;
         flex: 0 1 350px;
     }
+}
+
+@keyframes left-whoosh{
+    from {transform: translateX(-1000px)}
+    to {transform: translateX(0px)}
+}
+
+
+@keyframes right-whoosh{
+    from {transform: translateX(1000px)}
+    to {transform: translateX(0px)}
+}
+
+
+@keyframes appear {
+    from {opacity:0}
+    to {opacity: 1;}
 }
