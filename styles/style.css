@@ -62,7 +62,7 @@ header{
 .hero_section{
     height: 1080px;
 
-    background-image: url('./public/images/hero.png');
+    background-image: url('../public/images/hero.png');
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
