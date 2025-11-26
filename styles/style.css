@@ -62,7 +62,7 @@ header{
 .hero_section{
     height: 1080px;
 
-    background-image: url('/public/images/hero.png');
+    background-image: url('../public/images/hero.png');
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
@@ -238,22 +238,22 @@ header{
 
 @font-face {
     font-family: 'Belarus';
-    src: url('/public/fonts/Belarus.otf');
+    src: url('../public/fonts/Belarus.otf');
 }
 
 @font-face {
     font-family: 'Rubik-Italic';
-    src: url('/public/fonts/Rubik-Italic-VariableFont_wght.ttf');
+    src: url('../public/fonts/Rubik-Italic-VariableFont_wght.ttf');
 }
 
 @font-face{
     font-family: 'Rubik';
-    src: url('/public/fonts/Rubik-VariableFont_wght.ttf')
+    src: url('../public/fonts/Rubik-VariableFont_wght.ttf')
 }
 
 @font-face{
     font-family: 'SC-Portugal';
-    src: url('/public/fonts/SC-Portugal.ttf')
+    src: url('../public/fonts/SC-Portugal.ttf')
 }
 
 
