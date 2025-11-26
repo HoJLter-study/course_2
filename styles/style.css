@@ -156,6 +156,15 @@ header{
     max-width: 900px;
 }
 
+.footer_button{
+    height: 2rem;
+    border-radius: 25px;
+    border-width: 0px;
+
+    background-color: var(--clr-bg);
+    color: var(--clr-text)
+}
+
 
 
 /* УТИЛИТАРНЫЕ КЛАССЫ */
