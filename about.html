@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="public/images/logo.png" type="image/x-icon">
+    <script src="scripts/script.js"></script>
     <title>Царская ковка - О нас</title>
 </head>
 <body>
@@ -14,10 +15,17 @@
             <a href="./index.html" class="header__link">
                 <img class="logo" src="public/images/logo.png" alt="ГЛАВНАЯ">
             </a>
-            <nav class="flex g2">
-                <a href="./about.html" class="header__link">О НАС</a>
-                <a href="./articles.html" class="header__link">СТАТЬИ</a>
-                <a href="./for-autors.html" class="header__link">АВТОРАМ</a>                
+            <nav class="flex ai-center">
+                <button class="burger" id="burger_button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="g2 header_buttons" id="header_buttons">
+                    <a href="./about.html" class="header__link">О НАС</a>
+                    <a href="./articles.html" class="header__link">СТАТЬИ</a>
+                    <a href="./for-autors.html" class="header__link">АВТОРАМ</a>                
+                </div>
             </nav>
         </div>
     </header>

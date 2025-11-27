@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='./styles/style.css'>
+    <script src='scripts/script.js'></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class='flex f-col g2'>
+        <div class='flex g1 f-col ai-center'>
+            <video width='640' height='360' id='forge_video'>
+                <source src='./public/images/forge.mkv' type='video/mp4' controls>
+            </video>
+            <div class='video_controls flex ai-center'>
+                <button class='video_button' id='back_button'>
+                    Назад на 5 сек.
+                </button>
+                <button class='video_button' id='play_button'>
+                    Пуск
+                </button>
+                <button class='video_button' id='forward_button'>
+                    Вперёд на 5 сек.
+                </button>
+    
+            </div>
+        </div>
+
+        <div class='flex g1 f-col ai-center'>
+            <audio src='./public/images/forge.mp3' controls></audio>
+            <div class='audio_controls flex ai-center'>
+                <button class='audio_button' id='back_button'>
+                    Назад на 5 сек.
+                </button>
+                <button class='audio_button' id='play_button'>
+                    Пуск
+                </button>
+                <button class='audio_button' id='forward_button'>
+                    Вперёд на 5 сек.
+                </button>
+    
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
