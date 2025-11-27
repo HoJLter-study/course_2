@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // ЗАДАНИЕ 6
     article_section = document.getElementById('article_section')
     if (article_section){
-        fetch("./public/articles.json").then((res) => {
+        fetch("public/articles.json").then((res) => {
             res.json().then((data) => {
                 articles = data['articles']
                 articles.forEach((article_content) => {
