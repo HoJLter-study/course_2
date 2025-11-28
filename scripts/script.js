@@ -32,8 +32,25 @@ document.addEventListener('DOMContentLoaded', function(){
     time_button = document.getElementById("time_button")
     if (time_button){
         time_button.addEventListener('click', function(){
-            alert(Date())
-        })
+            
+            now = moment();
+            newYearDate = moment(`${now.year()+1}-01-01`)
+            
+            duration = moment.duration(newYearDate.diff(now));
+            console.log(duration.asDays(), duration.asSeconds(), )
+
+            months = Math.floor(duration.asMonths())
+            days = Math.floor(duration.asDays())
+            hours = Math.floor(duration.asHours())
+            minutes = Math.floor(duration.asMinutes())
+            seconds = Math.floor(duration.asSeconds())
+            alert(`Сегодня ${Date()}\nДо нового года осталось:
+                ${months} месяцев =
+                = ${days} дней =
+                = ${hours} часов =
+                = ${minutes} минут =
+                = ${seconds} секунд`)
+                })
     }
 
     //ЗАДАНИЕ 3
@@ -223,4 +240,3 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 })
-
