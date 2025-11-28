@@ -164,7 +164,46 @@ document.addEventListener('DOMContentLoaded', function(){
             })
         }
     
+    //ЗАДАНИЕ 6 (продолжение)
+    search_form = document.getElementById("search_form")
+    if (search_form){
+        article_section = document.getElementById('article_section')
+        search_form.addEventListener('submit', (event) =>{
+            event.preventDefault()
+            del_article_list = Array.from(document.getElementsByTagName('article'))
+            del_article_list.forEach((el) => el.remove())
+            formData = new FormData(search_form)
+            search_query = formData.get('search_query')
+            
+            fetch("public/articles.json").then((res) => {
+                res.json().then((res_json) => {
+                    new_articles_list = res_json['articles']
+                    for (let el of new_articles_list){
+                        if (el['title'].includes(search_query)){
+                            article = document.createElement('article')
+                            h2 = document.createElement('h3')
+                            p = document.createElement('p')
+                            h2.innerText = el['title']
+                            p.innerHTML = el['text']
 
+                            article.append(h2, p)
+                            
+                            article.classList.add("flex", "ai-center", "article")
+                            h2.classList.add("f-bel", "l-sp05", "article_h2")
+                            p.classList.add("f-rub", "article__container,")
+                            
+                            article_section.append(article)
+                        }
+                    }
+                })
+            })
+
+            console.log(formData.get("search_query"))
+            search_form.reset()
+        })
+    }
+
+    //ADAPTIVE
 
     burger_button = document.getElementById("burger_button")
     menu = document.getElementById("header_buttons")
