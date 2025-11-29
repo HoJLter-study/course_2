@@ -118,6 +118,14 @@ header{
     width:50%;
 }
 
+.video_controls{
+    gap: 2rem;
+}
+
+.audio_controls{
+    gap:2rem;
+}
+
 .about_block{
     width: 70%;
 }
@@ -173,7 +181,9 @@ header{
 
 .article__submit{
     background-color: var(--clr-accent);
-    
+    submit{
+        
+    }
     border-radius: 25px;
     height: 2rem;
     width: 2rem;
