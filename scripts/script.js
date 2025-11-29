@@ -236,7 +236,4 @@ document.addEventListener('DOMContentLoaded', function(){
             menu.classList.remove("menu_active")
         }
     })
-
-
-
 })
